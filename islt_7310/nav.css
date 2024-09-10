@@ -1,0 +1,48 @@
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: auto;
+}
+
+ul li{
+    display: inline-block;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+li a{
+    color: #011627;
+}
+
+li a:hover{
+    color: #d00000;
+}
+
+/* 
+   <weight>: Use a value from 100 to 900
+   ----------- NOTO FONT CLASSES -----------
+*/
+
+.noto-sans-400 {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.noto-sans-600sb {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style:normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
