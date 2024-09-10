@@ -1,3 +1,4 @@
+/* Generic Nav Styling */
 ul{
     list-style: none;
     margin: 0;
@@ -14,6 +15,7 @@ ul li{
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 20px;
+    position: relative;
 }
 
 li a{
@@ -21,6 +23,25 @@ li a{
 }
 
 li a:hover{
+    color: #d00000;
+}
+
+/* Sub-Nav Styling */
+.subnav{
+    display: none;
+    position: absolute;
+    margin-top: 0;
+    left: 80%;
+    margin-left: 0;
+    width: 10rem;
+    
+}
+
+li:hover .subnav{
+    display: block;
+}
+
+.subnav li:hover{
     color: #d00000;
 }
 
