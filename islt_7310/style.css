@@ -1,9 +1,26 @@
-h1{
-    color: #a52a2a;
-}
+
 
 /* #home{
     background: url(images/Bg1.JPG);
     background-repeat: no-repeat;
     background-size: cover;
 } */
+
+body{ /* Noto 400 */
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+/* Assignment Styling */
+h1{
+    color: #a52a2a;
+}
+
+#letter{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+}

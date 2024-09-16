@@ -30,8 +30,8 @@ li a:hover{
 .subnav{
     display: none;
     position: absolute;
-    margin-top: 0;
-    left: 80%;
+    margin-top: 10;
+    left: 40%;
     margin-left: 0;
     width: 10rem;
     
@@ -66,4 +66,4 @@ li:hover .subnav{
     font-style:normal;
     font-variation-settings:
       "wdth" 100;
-  }
+}

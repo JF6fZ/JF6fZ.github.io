@@ -10,9 +10,9 @@ Author:  Julian Fletcher
 
 School/Term:  University of Missouri - FS2024
 
-Developed: 8/31/24
+Developed: 9/16/24
 
-Tested:  Aug 31, 2024; Passed on Edge and Chrome browsers.
+Tested:  Sep 16, 2024; Passed on Edge and Chrome browsers.
 
 ******************************************************************************
 
@@ -23,11 +23,32 @@ Tested:  Aug 31, 2024; Passed on Edge and Chrome browsers.
     <head>
         <meta charset="utf-8">
         <title>About Me</title>
+
+        <link rel="stylesheet" href="nav.css">
+        <link rel="stylesheet" href="style.css">
+
+        <!-- For Noto Sans-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
             <nav>
-
+                <ul class="noto-sans-600sb"> 
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li>
+                        <a href="project.html">Projects</a>
+                        <ul class="subnav">
+                            <li>Link 1</li>
+                            <li>Link 2</li>
+                            <li>Link 3</li>
+                        </ul>
+                    </li>
+                    <li><a href="reflection.html">Reflection</a></li>
+                    <li><a href="#contact.html">Contact</a></li>
+                </ul>
             </nav>
             <h1>Julian Fletcher</h1>
         </header>
