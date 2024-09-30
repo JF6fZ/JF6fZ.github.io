@@ -3,8 +3,9 @@ ul{
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: center;
+    justify-content: center;
     width: auto;
+    display: flex;
 }
 
 ul li{
@@ -31,10 +32,10 @@ li a:hover{
     display: none;
     position: absolute;
     margin-top: 10;
-    left: 40%;
+    left: 6%;
     margin-left: 0;
     width: 10rem;
-    
+    text-align: left;
 }
 
 li:hover .subnav{
@@ -66,4 +67,37 @@ li:hover .subnav{
     font-style:normal;
     font-variation-settings:
       "wdth" 100;
+}
+
+@media (max-width: 600px) {
+    ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    .icon{
+        display: block;
+    }
+
+    .subnav{
+        display: none;
+        position: relative;
+        margin-top: 10;
+        left: 30%;
+        margin-left: 0;   
+    }
+    
+    li:hover ul{
+        display: block;
+        z-index: 1;
+    }
+
+    li:hover .subnav li{
+        display: block;
+        width: 100%;
+        z-index: 1;
+    }
+    
+    .subnav li:hover{
+        color: #d00000;
+    }
 }

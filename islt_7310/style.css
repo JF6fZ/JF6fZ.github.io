@@ -11,6 +11,8 @@ body{ /* Noto 400 */
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
+      padding-left: 2rem;
+      padding-right: 2rem;
 }
 
 /* Assignment Styling */
@@ -38,7 +40,7 @@ h1{
 .intro-container{
     display: flex;
     flex-direction: column;
-    padding: 3rem;
+    padding: 2rem;
     gap: 2rem;
 }
 
@@ -56,4 +58,24 @@ h1{
 .secondary-info{
     flex: 1;
     padding: 1rem;
+}
+
+@media only screen and (max-width: 740px){
+    .bio-section{
+        flex-direction: column;
+    }
+    .bio{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    #profile{
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .secondary-info{
+        padding: 0;
+    }
 }
