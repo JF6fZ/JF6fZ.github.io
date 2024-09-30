@@ -64,6 +64,10 @@ h1{
     display: none;
 }
 
+.print-info{
+    display: none;
+}
+
 @media only screen and (max-width: 740px){
     .bio-section{
         flex-direction: column;
