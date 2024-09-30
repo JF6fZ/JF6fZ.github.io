@@ -25,7 +25,14 @@ h1{
     font-size: xx-large;
 }
 
-
+footer{
+    background: url(images/miz2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    color: white;
+    padding: 1rem;
+}
 
 /* ********************* ABOUT ********************* */
 #profile{
