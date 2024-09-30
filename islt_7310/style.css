@@ -125,4 +125,8 @@ h1{
     .secondary-info{
         display: none;
     }
+
+    .print-info{
+        display: block;
+    }
 }   
