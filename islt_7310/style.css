@@ -141,3 +141,7 @@ footer{
         display: block;
     }
 }   
+
+footer span:hover{
+    font-size: 2rem;
+}
