@@ -206,3 +206,86 @@ footer span:hover{
         flex-direction: column;
     }
 }
+
+/* ==================== TABLE STYLES ============= */
+
+
+
+tbody {
+    background-color: #e4f0f5;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+caption{
+    caption-side: bottom;
+    padding: 10px;
+    background-color: #353738;
+}
+
+th, td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+}
+
+td {
+    text-align: center;
+}
+  
+tr:nth-child(even) {
+    background-color: #444444;
+}
+  
+tr:nth-child(odd) {
+    background-color: #ffffff;
+    color: black;
+}
+
+thead {
+    background-color: #353738;
+    color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+    table, caption, thead, tbody, th, td, tr {
+      display: block;
+    }
+    
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+    
+    tr {
+      margin-bottom: 10px;
+    }
+    
+    td {
+      border: none;
+      position: relative;
+      padding-left: 50%;
+    }
+    
+    td:before {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+      content: attr(data-label);
+      font-weight: bold;
+    }
+    
+    /* Specific styling for your table structure */
+    tbody tr td:nth-of-type(1):before { content: "Criteria"; }
+    tbody tr td:nth-of-type(2):before { content: "Full Points"; }
+    tbody tr td:nth-of-type(3):before { content: "No Points"; }
+  }
