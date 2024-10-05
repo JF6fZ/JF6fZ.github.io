@@ -288,4 +288,50 @@ thead {
     tbody tr td:nth-of-type(1):before { content: "Criteria"; }
     tbody tr td:nth-of-type(2):before { content: "Full Points"; }
     tbody tr td:nth-of-type(3):before { content: "No Points"; }
-  }
+}
+
+
+.form_c{
+    background-color: #edeeef;
+    padding: 2rem;
+    width: 40%;
+    margin: auto;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+input{
+    width: 95%;
+    margin-bottom: 1rem;
+}
+
+#message{
+    height: 3rem;
+}
+
+
+@media only screen and (max-width: 768px){
+    .form_c{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .form_c{
+        width: 100%;
+        padding: 0;
+    }
+
+    .input{
+        width: 100%;
+    }
+
+    form{
+        padding: 10px;
+    }
+    
+    #formname{
+        padding-top: 5px;
+        text-align: center;
+    }
+}
