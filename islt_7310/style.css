@@ -11,18 +11,11 @@ body{ /* Noto 400 */
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
-      padding-left: 2rem;
-      padding-right: 2rem;
 }
 
-/* Assignment Styling */
-h1{
-    color: #a52a2a;
-}
-
-#letter{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: xx-large;
+main{
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 footer{
@@ -31,7 +24,27 @@ footer{
     background-size: cover;
     -webkit-background-size: cover;
     color: white;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+footer span:hover{
+    font-size: 2rem;
+}
+
+#home-m{
+    min-height: 75vh;
+}
+
+#home{
+    background-image: url(images/Field.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    color: white;
+    font-weight: 600;
 }
 
 /* ********************* ABOUT ********************* */
@@ -49,11 +62,19 @@ footer{
     flex-direction: column;
     padding: 2rem;
     gap: 2rem;
+    
+}
+
+#about{
+    margin-top: .5rem;
+    padding-top: 1rem;
 }
 
 .bio-section{
     display: flex;
     align-items: center;
+    background-color: #edeeef;
+    padding: 2rem;
 }
 
 .bio{
@@ -142,6 +163,46 @@ footer{
     }
 }   
 
-footer span:hover{
-    font-size: 2rem;
+
+/* ===================== PROJECTS ================== */
+.heading{
+    justify-content: center;
+    text-align: center;
+}
+.project_container{
+    display: flex;
+    flex-direction: row;
+}
+
+.p_box{
+    margin: 1rem;
+}
+
+.p_img{
+    padding: 5rem;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.p_desc{
+    /* padding: .5rem; */
+}
+
+#cpp{
+    background-image: url(images/Bg1.JPG);
+}
+
+#dij{
+    background-image: url(images/Bg1.JPG);
+}
+
+#adv_g{
+    background-image: url(images/P1.PNG);
+}
+
+@media only screen and (max-width: 768px) {
+    .project_container{
+        flex-direction: column;
+    }
 }

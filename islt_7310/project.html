@@ -10,9 +10,9 @@ Author:  Julian Fletcher
 
 School/Term:  University of Missouri - FS2024
 
-Developed: 9/29/24
+Developed: 10/4/24
 
-Tested:  Sep 29, 2024; Passed on Edge and Chrome browsers.
+Tested:  Oct 4, 2024; Passed on Edge and Chrome browsers.
 
 ******************************************************************************
 
@@ -44,9 +44,9 @@ Tested:  Sep 29, 2024; Passed on Edge and Chrome browsers.
                     <li>
                         <a href="project.html">Projects</a>
                         <ul class="subnav">
-                            <li>Link 1</li>
-                            <li>Link 2</li>
-                            <li>Link 3</li>
+                            <li><a href="project.html#cpp">Data Structures</a></li>
+                            <li><a href="project.html#dij">Constrained Pathfinding</a></li>
+                            <li><a href="project.html#adv_g">Crash Atlas</a></li>
                         </ul>
                     </li>
                     <li><a href="reflection.html">Reflection</a></li>
@@ -57,7 +57,55 @@ Tested:  Sep 29, 2024; Passed on Edge and Chrome browsers.
         </header>
         
         <main>
+            <div class="heading">
+                <h2>Projects</h2>
+            </div>
+            
+            <div class="project_container">
+                <div class="p_box">
+                    <div class="p_img" id="cpp">
+                        <h3>C++ Data Structures and Algorithms</h3>
+                    </div>
+                    <div class="p_desc" >
+                        <p>
+                            This is an ongoing project where I am implementing various data structures and some common algorithms in C++. I started this project in June 2024 to learn C++ and prepare for my research this fall and internship this spring. Programming data structures allowed me to get familiar with the syntax and standard libraries in C++ while giving me a deeper understanding of the data structures that make the world go round. I've implemented basic structures like linked lists, and more advanced structures like graphs and common search algorithms like Depth First Search and Dijkstra's Algorithm. In the future I plan to dive into tree data structures like the k-d tree, red-black tree, and more. This project builds off coursework completed in CS 2050 and 3050, and to an extent CS 4050. This will be an ongoing project as I learn new data structures and try to implement them.
+                        </p>
+                        <p>
+                            The first structures I implemented are more C-style implementations than proper C++ due to my lack of familiarity with the language. I was also unfamiliar with many features of C++, so I implemented some of the core operations sub-optimally or outright did not implement them. I plan to go back and redo these earlier structures to match my current competency in the language. Additionally, I did not properly consider the performance of many functions I've written, so ensuring they are efficient is something I need to go back to and do as well.
+                        </p>
+                    </div>
+                </div>
 
+                <div class="p_box">
+                    <div class="p_img" id="dij">
+                        <h3>Turn Constrained Pathfinding</h3>
+                    </div>
+                    <div class="p_desc">
+                        <p>
+                            This is my ongoing research project. I am working with Dr. Jeffery Uhlmann to implement a version of Dijkstra's Algorithm that considers turn constraints when finding the shortest path between two points on a graph. I'm conducting this research as a part of my involvement in the McNair Scholars Program. I reached out to Dr. Uhlmann after taking CS3050 with him and being intrigued by his lectures on Dijkstra's Algorithm. The algorithm that I'm implementing was theorized by Dr. Uhlmann and another researcher years ago; in that paper they described a 2D and 3D implementation of the same algorithm. I will be implementing the 3D version of the algorithm this semester.
+                        </p>
+                        <p>
+                            This research is ongoing, though I hope to have it complete by the end of the semester (ambitious indeed)! If I could change something about my process, I would put in a little more work this summer to get on solid footing with C++ (the language I've chosen to implement the algorithm in) and start reading papers. Otherwise, I'm excited for what's to come!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="p_box">
+                    <div class="p_img" id="adv_g">
+                        <h3>Austin Texas Crash Atlas</h3>
+                    </div>
+                    <div class="p_desc">
+                        <p>
+                            This was a class project for Geography 4940: Advanced Geographic Information Systems. In this project I gathered crash data from Huston Texas and created an atlas of maps broken down by police districts in the city. Each district map in the atlas has a “dashboard” of crash data from each district. This dashboard includes information like the average number of crashes on each road, the number of fatalities or injuries in crashes, and a graph showing the number of crashes recorded on each road within the district. The atlas includes a larger map showing the entire city, and on this map roads with more recorded
+                            crashes appear larger than those with smaller amounts—giving a great visual on where hotspots of crashes are in the city.
+                        </p>
+                        <p>
+                            If I could redo this project, I would change the color scheming I used. I was trying to avoid using too many colors, but I don’t think the colors I chose are visually appealing. I would also spend more time making the dashboard of each district more visually appealing. I would also change my analysis used on roads to be more precise on geolocating crashes to roads segments. Some crashes ended up duplicated when they occurred in intersections, which is not idea—but I didn't have the knowledge to remedy this at the time of the project.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
         </main>
         
         <footer>
