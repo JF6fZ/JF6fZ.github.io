@@ -334,4 +334,13 @@ input{
         padding-top: 5px;
         text-align: center;
     }
+
+
+}
+
+#smal-div{
+    background-color: #edeeef;
+    color: black;
+    padding: 1rem;
+    margin-bottom: 10px;
 }
